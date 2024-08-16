@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8k2ynbb18t1w"]
+
+[ext_resource type="PackedScene" uid="uid://c635m1grykuyv" path="res://Step by step/S2 Creating your first script/sprite_2d.tscn" id="1_avysx"]
+[ext_resource type="Script" path="res://Step by step/S4 Using signals/on_off_sprite_2d.gd" id="2_8rgws"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" parent="." instance=ExtResource("1_avysx")]
+position = Vector2(299, 205)
+script = ExtResource("2_8rgws")
+
+[node name="Timer" type="Timer" parent="Sprite2D"]
+autostart = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 27.0
+offset_top = 13.0
+offset_right = 339.0
+offset_bottom = 130.0
+text = "Toggle Button"
+
+[connection signal="pressed" from="Button" to="Sprite2D" method="_on_button_pressed"]
