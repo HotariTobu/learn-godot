@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="learn-godot"
-run/main_scene="res://Step by step/S0 Nodes and Scenes/label.tscn"
+run/main_scene="res://Getting Started/Step by step/S0 Nodes and Scenes/label.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-MusicPlayer="*res://Squash the creeps!/music_player.tscn"
+MusicPlayer="*res://Getting Started/Squash the creeps!/music_player.tscn"
 
 [editor_plugins]
 

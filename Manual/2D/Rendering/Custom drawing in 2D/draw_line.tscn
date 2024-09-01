@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnvawukg46ah7"]
+
+[ext_resource type="Script" path="res://Manual/2D/Rendering/Custom drawing in 2D/draw_line.gd" id="1_rv8kp"]
+
+[node name="draw_line" type="Node2D"]
+scale = Vector2(10, 10)
+script = ExtResource("1_rv8kp")
+width = 2
