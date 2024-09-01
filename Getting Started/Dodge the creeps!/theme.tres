@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bagtxbii2ioij"]
+
+[ext_resource type="FontFile" uid="uid://dqyqtbdewlg03" path="res://Getting Started/Dodge the creeps!/assets/fonts/Xolonium-Regular.ttf" id="1_8ycua"]
+
+[resource]
+default_font = ExtResource("1_8ycua")
+default_font_size = 64

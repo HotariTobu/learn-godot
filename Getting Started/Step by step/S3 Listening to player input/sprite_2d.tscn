@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bft5p4t8uuw4f"]
+
+[ext_resource type="Texture2D" uid="uid://bll7hv1qjd81g" path="res://icon.svg" id="1_yd8lj"]
+[ext_resource type="Script" path="res://Getting Started/Step by step/S3 Listening to player input/user_ctrl_sprite_2d.gd" id="2_y74fa"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(348, 320)
+texture = ExtResource("1_yd8lj")
+script = ExtResource("2_y74fa")
