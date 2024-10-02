@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://3kl6qatpjvhw"]
+
+[ext_resource type="Script" path="res://Playground/String/string_and_stringname.gd" id="1_ok5x6"]
+
+[node name="StringAndStringname" type="Node"]
+script = ExtResource("1_ok5x6")

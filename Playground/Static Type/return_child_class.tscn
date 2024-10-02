@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4ch3y0vp21x6"]
+
+[ext_resource type="Script" path="res://Playground/Static Type/return_child_class.gd" id="1_ou6vf"]
+
+[node name="ReturnChildClass" type="Node"]
+script = ExtResource("1_ou6vf")

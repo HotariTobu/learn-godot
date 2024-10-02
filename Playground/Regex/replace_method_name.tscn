@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgfdkemumev7a"]
+
+[ext_resource type="Script" path="res://Playground/Regex/replace_method_name.gd" id="1_ih2qv"]
+
+[node name="ReplaceMethodName" type="Node"]
+script = ExtResource("1_ih2qv")

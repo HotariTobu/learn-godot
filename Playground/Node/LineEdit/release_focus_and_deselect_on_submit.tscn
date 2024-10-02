@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://sq7dwu1gsehk"]
+
+[ext_resource type="Script" path="res://Playground/Node/LineEdit/release_focus_and_deselect_on_submit.gd" id="1_epmix"]
+
+[node name="ReleaseFocusAndDeselectOnSubmit" type="LineEdit"]
+script = ExtResource("1_epmix")
+
+[connection signal="text_submitted" from="." to="." method="_on_text_submitted"]

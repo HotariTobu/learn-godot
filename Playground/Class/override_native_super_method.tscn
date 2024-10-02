@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://n5358e4oper3"]
+
+[ext_resource type="Script" path="res://Playground/Class/override_native_super_method_child.gd" id="1_uuk8e"]
+
+[node name="OverrideNativeSuperMethod" type="Node"]
+script = ExtResource("1_uuk8e")

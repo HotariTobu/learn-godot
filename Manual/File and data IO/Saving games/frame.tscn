@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://be834io8kr8nv"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_3pogg"]
+viewport_path = NodePath("Src")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_0iggx"]
+viewport_path = NodePath("Dst")
+
+[node name="Frame" type="Node"]
+
+[node name="Src" type="SubViewport" parent="."]
+
+[node name="Dst" type="SubViewport" parent="."]
+
+[node name="SrcScreen" type="Sprite2D" parent="."]
+position = Vector2(299, 315)
+texture = SubResource("ViewportTexture_3pogg")
+
+[node name="DstScreen" type="Sprite2D" parent="."]
+position = Vector2(860, 312)
+texture = SubResource("ViewportTexture_0iggx")

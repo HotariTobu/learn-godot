@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvd06j8upmx7f"]
+
+[ext_resource type="Texture2D" uid="uid://bll7hv1qjd81g" path="res://icon.svg" id="1_q277m"]
+[ext_resource type="Script" path="res://Manual/File and data IO/Saving games/Binary serialization/icon.gd" id="2_y0efk"]
+
+[node name="Icon" type="Sprite2D"]
+position = Vector2(156, 324)
+rotation = -0.349066
+scale = Vector2(1.5, 0.8)
+skew = 0.0872665
+texture = ExtResource("1_q277m")
+script = ExtResource("2_y0efk")

@@ -1,0 +1,144 @@
+[gd_scene load_steps=10 format=3 uid="uid://bpymqmxmowrv5"]
+
+[ext_resource type="Texture2D" uid="uid://bjlobodxg8kor" path="res://Playground/assets/arrow-232.svg" id="1_grrtl"]
+[ext_resource type="Texture2D" uid="uid://wak8vng4qn8f" path="res://Playground/assets/black-mac-folder-13646.svg" id="2_xoxjp"]
+[ext_resource type="Texture2D" uid="uid://f5o1rk5con6" path="res://Playground/assets/heart-329.svg" id="3_pskv6"]
+[ext_resource type="Texture2D" uid="uid://b62yclw0iv8f1" path="res://Playground/assets/lightning-bolt-4124.svg" id="4_or0jc"]
+[ext_resource type="Texture2D" uid="uid://paiao53c22oi" path="res://Playground/assets/shining-star-2775.svg" id="5_5urjx"]
+[ext_resource type="Texture2D" uid="uid://caksdoxhtytsq" path="res://Playground/assets/running-man-8580.svg" id="6_hacsi"]
+[ext_resource type="VideoStream" path="res://Playground/assets/rakugaki.ogv" id="7_bwwp6"]
+
+[sub_resource type="Gradient" id="Gradient_1fji8"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_6dcxs"]
+gradient = SubResource("Gradient_1fji8")
+
+[node name="ScrollContainer" type="ScrollContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+
+[node name="ControlSample" type="GridContainer" parent="Control"]
+layout_mode = 2
+offset_right = 1128.0
+offset_bottom = 587.0
+columns = 5
+
+[node name="GraphFrame" type="GraphFrame" parent="Control/ControlSample"]
+layout_mode = 2
+offset_right = 200.0
+offset_bottom = 283.0
+mouse_filter = 1
+title = "Frame Title"
+
+[node name="GraphNode" type="GraphNode" parent="Control/ControlSample/GraphFrame"]
+layout_mode = 2
+offset_left = 18.0
+offset_top = 51.0
+offset_right = 182.0
+offset_bottom = 271.0
+title = "Node Title"
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+
+[node name="Label" type="Label" parent="Control/ControlSample/GraphFrame/GraphNode"]
+layout_mode = 2
+text = "Node Containt"
+
+[node name="GraphEdit" type="GraphEdit" parent="Control/ControlSample"]
+layout_mode = 2
+
+[node name="GraphNode" type="GraphNode" parent="Control/ControlSample/GraphEdit"]
+layout_mode = 0
+offset_right = 88.0
+offset_bottom = 55.0
+mouse_filter = 1
+title = "Node Title"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/ControlSample"]
+layout_mode = 2
+
+[node name="LinkButton" type="LinkButton" parent="Control/ControlSample/VBoxContainer"]
+layout_mode = 2
+text = "Icon by Iconpacks"
+uri = "https://iconpacks.net/?utm_source=link-attribution&utm_content=4124"
+
+[node name="TextureButton" type="TextureButton" parent="Control/ControlSample/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_grrtl")
+texture_pressed = ExtResource("2_xoxjp")
+texture_hover = ExtResource("3_pskv6")
+texture_disabled = ExtResource("4_or0jc")
+texture_focused = ExtResource("5_5urjx")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Control/ControlSample"]
+layout_mode = 2
+value = 50.0
+texture_progress = ExtResource("1_grrtl")
+
+[node name="ItemList" type="ItemList" parent="Control/ControlSample"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+item_count = 6
+max_columns = 2
+same_column_width = true
+fixed_icon_size = Vector2i(16, 16)
+item_0/text = "Arrow"
+item_0/icon = ExtResource("1_grrtl")
+item_1/text = "Folder"
+item_1/icon = ExtResource("2_xoxjp")
+item_2/text = "Heart"
+item_2/icon = ExtResource("3_pskv6")
+item_3/text = "Light"
+item_3/icon = ExtResource("4_or0jc")
+item_4/text = "Man"
+item_4/icon = ExtResource("6_hacsi")
+item_5/text = "Star"
+item_5/icon = ExtResource("5_5urjx")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control/ControlSample"]
+custom_minimum_size = Vector2(200, 300)
+layout_mode = 2
+texture = ExtResource("6_hacsi")
+region_rect = Rect2(0, 0, 256, 143)
+axis_stretch_vertical = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Control/ControlSample"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+editor_only = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/ControlSample"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]bold[i]bold italic[/i][/b][i]italic[/i]"
+
+[node name="TextureRect" type="TextureRect" parent="Control/ControlSample"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_6dcxs")
+
+[node name="Tree" type="Tree" parent="Control/ControlSample"]
+layout_mode = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Control"]
+layout_mode = 2
+offset_left = 235.0
+offset_top = 343.0
+offset_right = 635.0
+offset_bottom = 551.0
+stream = ExtResource("7_bwwp6")
+autoplay = true
+loop = true

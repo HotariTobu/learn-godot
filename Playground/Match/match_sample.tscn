@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://g4dltnwsw4v2"]
+
+[ext_resource type="Script" path="res://Playground/Match/match_sample.gd" id="1_c8bkb"]
+
+[node name="MatchSample" type="Node"]
+script = ExtResource("1_c8bkb")

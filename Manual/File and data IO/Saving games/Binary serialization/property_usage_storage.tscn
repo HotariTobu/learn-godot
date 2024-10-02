@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnv4kb24itm62"]
+
+[ext_resource type="Script" path="res://Manual/File and data IO/Saving games/Binary serialization/property_usage_storage.gd" id="1_v3xxy"]
+[ext_resource type="PackedScene" uid="uid://be834io8kr8nv" path="res://Manual/File and data IO/Saving games/frame.tscn" id="2_dii37"]
+
+[node name="PropertyUsageStorage" type="Node"]
+script = ExtResource("1_v3xxy")
+
+[node name="Frame" parent="." instance=ExtResource("2_dii37")]

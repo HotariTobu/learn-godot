@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://biq5y33uqjlf1"]
+
+[ext_resource type="Script" path="res://Playground/Static Type/overload_method.gd" id="1_c4aek"]
+
+[node name="OverloadMethod" type="Node"]
+script = ExtResource("1_c4aek")

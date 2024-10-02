@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dghex1d55t805"]
+
+[ext_resource type="Script" path="res://Manual/File and data IO/Saving games/JSON serialization/json.gd" id="1_bbpbm"]
+[ext_resource type="PackedScene" uid="uid://be834io8kr8nv" path="res://Manual/File and data IO/Saving games/frame.tscn" id="2_b3pvo"]
+
+[node name="Json" type="Node"]
+script = ExtResource("1_bbpbm")
+
+[node name="Frame" parent="." instance=ExtResource("2_b3pvo")]

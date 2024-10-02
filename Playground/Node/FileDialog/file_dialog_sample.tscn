@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://cihfgisk4dsxe"]
+
+[ext_resource type="Script" path="res://Playground/Node/FileDialog/file_dialog_sample.gd" id="1_gvhho"]
+
+[node name="FileDialogSample" type="Node"]
+script = ExtResource("1_gvhho")
+
+[node name="FileDialog" type="FileDialog" parent="."]
+initial_position = 1
+size = Vector2i(500, 500)
+access = 2
+filters = PackedStringArray("*.txt")
+use_native_dialog = true
+
+[node name="SceneTreeButton" type="Button" parent="."]
+offset_left = 76.0
+offset_top = 142.0
+offset_right = 206.0
+offset_bottom = 173.0
+text = "from SceneTree"
+
+[node name="CodeButton" type="Button" parent="."]
+offset_left = 186.0
+offset_top = 192.0
+offset_right = 316.0
+offset_bottom = 223.0
+text = "from Code"
+
+[connection signal="pressed" from="SceneTreeButton" to="." method="_on_scene_tree_button_pressed"]
+[connection signal="pressed" from="CodeButton" to="." method="_on_code_button_pressed"]

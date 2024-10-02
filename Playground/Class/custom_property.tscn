@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwt1n2s85jpyl"]
+
+[ext_resource type="Script" path="res://Playground/Class/custom_property.gd" id="1_tr7dt"]
+
+[node name="CustomProperty" type="Node"]
+script = ExtResource("1_tr7dt")
+number_0 = 0
+number_1 = 3
+number_2 = 0

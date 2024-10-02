@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkrjtix2lafki"]
+
+[ext_resource type="Script" path="res://Playground/Static Type/get_variable_type.gd" id="1_nseqg"]
+
+[node name="GetVariableType" type="Node"]
+script = ExtResource("1_nseqg")
