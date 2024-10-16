@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://pdr6b7pdt8dr"]
+
+[node name="SliderSample" type="Node"]
+
+[node name="HSlider" type="HSlider" parent="."]
+offset_right = 127.0
+offset_bottom = 16.0
+
+[node name="VSlider" type="VSlider" parent="."]
+offset_left = 65.0
+offset_top = 84.0
+offset_right = 81.0
+offset_bottom = 233.0

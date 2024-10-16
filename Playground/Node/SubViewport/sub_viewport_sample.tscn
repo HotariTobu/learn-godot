@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://ro1nu13458yf"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_fp8g2"]
+viewport_path = NodePath("SubViewport")
+
+[node name="SubViewportSample" type="Node"]
+
+[node name="SubViewport" type="SubViewport" parent="."]
+
+[node name="Button" type="Button" parent="SubViewport"]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "button"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("ViewportTexture_fp8g2")
+centered = false

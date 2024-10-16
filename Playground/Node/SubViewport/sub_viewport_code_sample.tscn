@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://csfr7ffqbqhyn"]
+
+[ext_resource type="Script" path="res://Playground/Node/SubViewport/sub_viewport_code_sample.gd" id="1_tqk3o"]
+
+[node name="SubViewportCodeSample" type="Node"]
+script = ExtResource("1_tqk3o")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+
+[node name="Button" type="Button" parent="SubViewport"]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "button"

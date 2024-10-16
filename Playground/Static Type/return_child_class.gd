@@ -10,17 +10,3 @@ func _init():
 func get_list_holder() -> Parent:
 	return Child.new()
 	
-	
-class Parent:
-	func get_list() -> Array[String]:
-		return [
-			'Hello'
-		]
-		
-class Child:
-	extends Parent
-	
-	func get_list():
-		var list = super()
-		list.append('Hi')
-		return list

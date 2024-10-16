@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5dk2ftx01oe5"]
+
+[ext_resource type="Script" path="res://Playground/Node/ColorPicker/color_picker_sample.gd" id="1_aod2m"]
+
+[node name="ColorPickerSample" type="ColorPicker"]
+script = ExtResource("1_aod2m")

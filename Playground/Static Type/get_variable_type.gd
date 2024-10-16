@@ -5,29 +5,38 @@ func _ready():
 	var person = Person.new()
 	var people: Array[Person] = []
 	var inner = Inner.new()
+	
+	var parent = Parent.new()
+	var child = Child.new()
 
-	#print("### Object ###")
+	#print("\n### Object ###")
 	#print_type(Object)
 
-	#print("### Node ###")
+	#print("\n### Node ###")
 	#print_type(Node)
 
-	print("### self ###")
+	print("\n### self ###")
 	print_type(self)
 
-	print("### Person ###")
+	print("\n### Person ###")
 	print_type(Person)
 
-	print("### person ###")
+	print("\n### person ###")
 	print_type(person)
 
-	print("### people ###")
+	print("\n### people ###")
 	print_type(people)
 
-	print("### inner ###")
+	print("\n### inner ###")
 	print_type(inner)
+
+	print("\n### parent ###")
+	print_type(parent)
+
+	print("\n### child ###")
+	print_type(child)
 	
-	print('### is_instance_of ###')
+	print('\n### is_instance_of ###')
 	#print(is_instance_of(person, person))
 	print(is_instance_of(person, Person))
 	print(is_instance_of(person, person.get_script()))
@@ -36,15 +45,15 @@ func _ready():
 	print(is_instance_of(self, Node))
 	print(is_instance_of(self, get_script()))
 	
-	print('### Script = ###')
+	print('\n### Script = ###')
 	print(person.get_script() == people.get_typed_script())
 	
 	#print(ClassDB.get_class_list())
 	
-	print('### person.person.gd ###')
+	print('\n### person.person.gd ###')
 	print(person.get("person.gd"))
 	
-	print('### person method list ###')
+	print('\n### person method list ###')
 	for method_info in person.get_method_list():
 		var method = Method.new(method_info)
 		if method.name != 'message_to':
@@ -68,6 +77,7 @@ static func print_type(value: Variant):
 	var script: Script
 	if value is GDScript:
 		script = value
+		value.get_base_script()
 	elif value is Array:
 		script = value.get_typed_script()
 	elif value is Object:
