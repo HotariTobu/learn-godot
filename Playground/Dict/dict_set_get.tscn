@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdqc21ph7odvv"]
+
+[ext_resource type="Script" path="res://Playground/Dict/dict_set_get.gd" id="1_70n0v"]
+
+[node name="DictSetGet" type="Node"]
+script = ExtResource("1_70n0v")
