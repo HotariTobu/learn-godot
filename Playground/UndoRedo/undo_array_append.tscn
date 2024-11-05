@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyuno442y1klf"]
+
+[ext_resource type="Script" path="res://Playground/UndoRedo/undo_array_append.gd" id="1_fpny0"]
+
+[node name="UndoArrayAppend" type="Node"]
+script = ExtResource("1_fpny0")

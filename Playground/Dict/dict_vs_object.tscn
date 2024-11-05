@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgj5f1fyse640"]
+
+[ext_resource type="Script" path="res://Playground/Dict/dict_vs_object.gd" id="1_f7blm"]
+
+[node name="DictVsObject" type="Node"]
+script = ExtResource("1_f7blm")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://vj1kdqr17oon"]
+
+[ext_resource type="Script" path="res://Playground/PackedArray/assign_long_int_to_bytes_array.gd" id="1_8b7om"]
+
+[node name="AssignLongIntToBytesArray" type="Node"]
+script = ExtResource("1_8b7om")

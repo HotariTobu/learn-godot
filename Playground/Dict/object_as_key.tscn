@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dw06u3voocfh7"]
+
+[ext_resource type="Script" path="res://Playground/Dict/object_as_key.gd" id="1_bcegn"]
+
+[node name="ObjectAsKey" type="Node"]
+script = ExtResource("1_bcegn")
