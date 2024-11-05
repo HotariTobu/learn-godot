@@ -21,7 +21,7 @@ MusicPlayer="*res://Getting Started/Squash the creeps!/music_player.tscn"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/gdscript_formatter/plugin.cfg", "res://addons/gut/plugin.cfg")
+enabled=PackedStringArray("res://addons/YouCanDoIt/plugin.cfg", "res://addons/gdscript_formatter/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/repl/plugin.cfg")
 
 [input]
 
