@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5v75nxrnbfx7"]
+
+[ext_resource type="Script" path="res://Playground/Class/inherit_static_var.gd" id="1_wvsra"]
+
+[node name="InheritStaticVar" type="Node"]
+script = ExtResource("1_wvsra")

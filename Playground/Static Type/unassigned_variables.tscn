@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsd7dartoolfl"]
+
+[ext_resource type="Script" path="res://Playground/Static Type/unassigned_variables.gd" id="1_0c6ly"]
+
+[node name="UnassignedVariables" type="Node"]
+script = ExtResource("1_0c6ly")

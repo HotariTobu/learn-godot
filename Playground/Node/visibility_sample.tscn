@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceuee2q5kxify"]
+
+[ext_resource type="Script" path="res://Playground/Node/visibility_sample.gd" id="1_m7mp8"]
+
+[node name="VisibilitySample" type="Node2D"]
+script = ExtResource("1_m7mp8")
+
+[node name="Child" type="Node2D" parent="."]
+
+[connection signal="visibility_changed" from="Child" to="." method="_on_child_visibility_changed"]

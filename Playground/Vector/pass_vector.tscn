@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://4g8no237k752"]
+
+[ext_resource type="Script" path="res://Playground/Vector/pass_vector.gd" id="1_jto2y"]
+
+[node name="PassVector" type="Node"]
+script = ExtResource("1_jto2y")
