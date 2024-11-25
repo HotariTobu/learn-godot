@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv63jrlhywrau"]
+
+[ext_resource type="Script" path="res://Playground/GDScript/get_base_script_sample.gd" id="1_yepus"]
+
+[node name="GetBaseScriptSample" type="Node"]
+script = ExtResource("1_yepus")

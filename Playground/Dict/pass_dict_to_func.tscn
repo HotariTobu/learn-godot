@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://djinb1yb66jkj"]
+
+[ext_resource type="Script" path="res://Playground/Dict/pass_dict_to_func.gd" id="1_pdgq0"]
+
+[node name="PassDictToFunc" type="Node"]
+script = ExtResource("1_pdgq0")

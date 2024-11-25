@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqq4qil1plde8"]
+
+[ext_resource type="Script" path="res://Playground/Class/stringify.gd" id="1_81a0g"]
+
+[node name="Stringify" type="Node"]
+script = ExtResource("1_81a0g")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://deiqup6uip4sg"]
+
+[ext_resource type="Script" path="res://Playground/Signal/call_defered_signal.gd" id="1_1xluw"]
+
+[node name="CallDeferedSignal" type="Node"]
+script = ExtResource("1_1xluw")

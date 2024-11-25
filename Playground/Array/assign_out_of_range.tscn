@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://br2g78yvdslsf"]
+
+[ext_resource type="Script" path="res://Playground/Array/assign_out_of_range.gd" id="1_2uoov"]
+
+[node name="AssignOutOfRange" type="Node"]
+script = ExtResource("1_2uoov")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwcpu0lx5chvx"]
+
+[ext_resource type="Script" path="res://Playground/Array/bsearch_sample.gd" id="1_1vsiv"]
+
+[node name="BsearchSample" type="Node"]
+script = ExtResource("1_1vsiv")

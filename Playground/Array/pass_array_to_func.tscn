@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgaivqpqlj3o2"]
+
+[ext_resource type="Script" path="res://Playground/Array/pass_array_to_func.gd" id="1_g3gl8"]
+
+[node name="PassArrayToFunc" type="Node"]
+script = ExtResource("1_g3gl8")
