@@ -11,6 +11,8 @@ func _ready():
 	printt(p is Parent, c is Parent, p is Child, c is Child)
 	printt(P.instance_has(p), P.instance_has(c), C.instance_has(p), C.instance_has(c))
 	printt(isinstance(p, P), isinstance(c, P), isinstance(p, C), isinstance(c, C))
+	printt(is_instance_of(p, Person), is_instance_of(c, Person), is_instance_of(p, Child), is_instance_of(c, Child))
+	printt(is_instance_of(p, P), is_instance_of(c, P), is_instance_of(p, C), is_instance_of(c, C))
 
 
 static func isinstance(instance: Object, script: Script) -> bool:

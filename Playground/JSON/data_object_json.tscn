@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dh0140gv7u1l0"]
+
+[ext_resource type="Script" path="res://Playground/JSON/data_object_json.gd" id="1_gjsyi"]
+
+[node name="DataObjectJson" type="Node"]
+script = ExtResource("1_gjsyi")

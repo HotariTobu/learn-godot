@@ -7,3 +7,6 @@ func _ready():
 	
 	var emit = sig.emit.bind('Hello')
 	emit.call_deferred()
+
+	var s = sig.emit.bind('Hi') as Callable
+	s.call()

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgl71p0vs8va2"]
+
+[ext_resource type="Script" path="res://Playground/JSON/vector_json.gd" id="1_psqfd"]
+
+[node name="VectorJson" type="Node"]
+script = ExtResource("1_psqfd")
