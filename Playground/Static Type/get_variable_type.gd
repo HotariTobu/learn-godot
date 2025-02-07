@@ -78,14 +78,15 @@ static func print_type(value: Variant):
 
 	if value is GDScript:
 		script = value
+		print_property_list(value.get_property_list())
 
 	elif value is Array:
 		script = value.get_typed_script()
 
 	elif value is Object:
+		script = value.get_script()
 		printt("Class", value.get_class())
 		print_property_list(value.get_property_list())
-		script = value.get_script()
 
 	if script == null:
 		return
@@ -117,7 +118,7 @@ static func print_property_list(property_list: Array[Dictionary]):
 
 	for property_info in property_list:
 		var property = Property.new(property_info)
-		printt("", property)
+		printt("", property, property.usage)
 
 	print("]")
 
